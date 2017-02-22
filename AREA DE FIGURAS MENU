@@ -1,0 +1,70 @@
+// mayor18.cpp : Defines the entry point for the console application.
+//
+//CHRISTIAN RIOS LICHTENSTEIN MENU DE AREAS//
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+void main ()
+{
+	float area,base,altura,lado;
+	int opcion;
+	cout<< "menu"<<endl;
+	cout<< "1.area del triangulo"<<endl;
+	cout<< "2.area del rectangulo"<<endl;
+	cout<< "3.area del cuadrado"<<endl;
+	cout<< "salida maestro"<<endl;
+	cin>>opcion;
+	switch (opcion){
+	       
+	case 1:
+	{
+		cout<< "ingrese su base";
+		 cin>>base;
+		 cout<< "ingrese su altura";
+		 cin>>altura;
+		 
+		 area=(base*altura)/2;
+		
+			 cout<<"el area es:"<<area;
+
+		break;
+	}
+	  
+	case 2:
+	{
+		cout<<"ingrese su base";
+		cin>>base;
+		cout<< "ingrese su altura";
+		cin>>altura;
+		area=(base*altura);
+		cout<<"el area es:"<<area;
+		break;
+	}
+
+	case 3:
+	{
+			cout<<"ingrese su lado ";
+			cin>>lado;
+			area=(lado*lado);
+				cout<<"el area es:"<<area;
+			break;
+	}
+
+	case 0:
+	{
+		     cout<<"salir";
+			 break;
+	}
+
+	default:
+{
+		cout<<"opcion incorrecta loco";
+}
+}
+getch();
+}
+
+
+
